@@ -1,0 +1,15 @@
+#userForm {
+    
+}
+
+#formContainer {
+    margin-top: 20vh;
+    margin-bottom: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: lightslategrey;
+}
+
+#passwordHelpInline, #user {
+    color: white;
+}

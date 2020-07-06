@@ -18,7 +18,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="https://github.com/WesleyTejeda/Github-Viewer" target="_blank">View Repository</a>
@@ -34,7 +34,17 @@
           </nav>
     </header>
     <main>
-
+        <section id="formContainer" class="container">
+            <form id="userForm">
+                <div class="form-group">
+                    <label id="user" for="inputUser">User:<input type="password" id="inputUser" class="ml-1"></label>
+                    <button>Search</button>
+                    <small id="passwordHelpInline">
+                        *Seach using github username
+                    </small>
+                </div>
+            </form>
+        </section>
     </main>
 </body>
 <script src="js/index.js"></script>
