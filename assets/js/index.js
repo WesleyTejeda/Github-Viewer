@@ -34,7 +34,7 @@ async function postUserInfo(data1){
                 <div class="card-body col-2">
                     <i class="far fa-file-code"></i>
                     <p class="text-white" id="repo${uniqueId}">${data2.name}</p>
-                    <a href="${data2.html_url}" id="repo-link${uniqueId}target="_blank">Repository</a>
+                    <a href="${data2.html_url}" id="repo-link${uniqueId}" target="_blank">Repository</a>
                     <p class="text-white" id="repo-size${uniqueId}">${data2.size} KB</p>
                 </div>`;
                 uniqueId++;
