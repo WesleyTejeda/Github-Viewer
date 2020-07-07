@@ -53,6 +53,7 @@ async function postUserInfo(data1){
                             <h2 id="name">${data1.name}</h2>
                             <p id="location">${data1.location}</p>
                             <a href="${data1.html_url}" id="url" target="_blank">@${data1.login}</a>
+                            <p>${data1.bio}</p>
                         </div>
                     </div>
                 </div>
