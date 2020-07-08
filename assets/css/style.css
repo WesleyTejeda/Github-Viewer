@@ -2,6 +2,10 @@ nav {
     background-color: rgb(135, 174, 224);
 }
 
+#appendRepos a:link {
+    text-decoration: none;
+}
+
 .block {
     display: inline-flexbox;
 }
@@ -94,8 +98,8 @@ i {
     color: rgb(169, 234, 253);
 }
 
-.repo a {
- color: white;
+.repo {
+    color: white;
 }
 
 main {

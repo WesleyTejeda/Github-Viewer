@@ -31,7 +31,7 @@ async function postUserInfo(data1){
             let uniqueId = 0;
             data2.forEach(data2 => {
                 repoHtml += `
-                <a href="${data2.html_url}" id="repo-link${uniqueId}" target="_blank" class="card-body col-lg-3 col-md-4 col-sm-6 text-center repo-container">
+                <a href="${data2.html_url}" target="_blank" class="repo-link card-body col-lg-3 col-md-4 col-sm-6 text-center repo-container">
                     <i class="far fa-file-code"></i>
                     <p >${data2.name}</p>
                     <p class="repo">${data2.language}</p>
