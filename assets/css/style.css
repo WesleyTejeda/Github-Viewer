@@ -1,5 +1,26 @@
-#nav {
-    background-color: lightslategray;
+nav {
+    background-color: rgb(135, 174, 224);
+}
+
+.block {
+    display: inline-flexbox;
+}
+
+.nav-link {
+    border: white solid;
+    background-color: rgb(135, 174, 224);
+}
+
+.nav-link:hover {
+    box-shadow: 1px 1px 2px white, 0 0 10px white;
+}
+
+#navTitle {
+    float: left;
+}
+
+#ul {
+    margin-left: 10px;
 }
 
 #formContainer {
@@ -23,7 +44,6 @@
 
 #accInfo {
     width: 100%;
-    margin-bottom: 50px;
 }
 
 #photoContainer {
@@ -34,13 +54,24 @@
 }
 
 #photo {
-    height: 200px;
+    width: 200px;
+    padding: 2px;
+    border: 3px solid #1c87c9;
+    border-radius: 100px 100px 100px 100px;
 }
 
 .card-body {
+    z-index: 200;
     background-color: lightslategray;
-    margin-top: 5px;
-    margin-right: 5px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    font-weight: bold;
+}
+
+.card-body:hover {
+    z-index: 201;
+    box-shadow: 1px 1px 2px white, 0 0 10px white;
 }
 
 #appendRepos {
@@ -51,7 +82,7 @@
     color: #ffffff;
 }
 
-a {
+#userURL {
     color: rgb(169, 234, 253)
 }
 
@@ -59,6 +90,17 @@ a {
     width: 200px;
 }
 
-.far {
+i {
     color: rgb(169, 234, 253);
+}
+
+.repo a {
+ color: white;
+}
+
+main {
+    text-align: center !important;
+}
+form {
+    display: inline-block !important;
 }

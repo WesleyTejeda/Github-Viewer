@@ -11,37 +11,24 @@
 </head>
 <body>
     <header>
-        <nav id="nav" class="navbar navbar-expand-lg navbar-Dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <h3 class="text-white">Github Profile Viewer</h3>
-            <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://github.com/WesleyTejeda/Github-Viewer" target="_blank">View Repository</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://github.com/WesleyTejeda" target="_blank">My Github</a>
-                </li>
-              </ul>
-            </div>
-        </nav>
+      <nav class="nav w-100">
+        <h3 id="navTitle" class="text-white col-lg col-md col-sm-12">Github Profile Viewer</h3>
+        <a class="nav-link col-md-2 col-sm-6 text-center" href="index.html">New Search</a>
+        <a class="nav-link col-md-3 col-sm-6 text-center" href="https://github.com/WesleyTejeda/Github-Viewer" target="_blank">View Repository</a>
+      </nav>
     </header>
     <main id="main">
-        <section id="formContainer" class="container text-center">
-            <form method="POST" id="userForm">
-                <div class="form-group">
-                    <label id="user" for="inputUser">User:<input id="inputUser" class="ml-1"></label>
-                    <button id="search">Search</button>
-                    <small id="userHelpInline">
-                        *Seach using github username
-                    </small>
+        <section id="formContainer" class="container text-center justify-content-center">
+            <form method="POST" id="userForm" class="form-inline">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">@</span>
                 </div>
+                <input id="inputUser" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                <button id="search">Search</button>
+              </div>
             </form>
+            <p id="userHelpInline">*Seach using github username</p>
         </section>
     </main>
 </body>
